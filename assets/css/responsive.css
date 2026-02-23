@@ -3,9 +3,9 @@
    ============================================= */
 
 @media (max-width: 768px) {
-  .nav-desktop,
-  .header-socials { display: none; }
-  .mobile-toggle { display: block; }
+  body {
+    padding-top: 80px;
+  }
 
   .hero-inner {
     flex-direction: column-reverse;

@@ -20,56 +20,45 @@ export function renderHeader(container) {
           <a href="https://www.linkedin.com/in/enzobazzi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="mailto:enzobazzideoliveira@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
         </div>
-        <button class="mobile-toggle" id="mobile-toggle">
-          <i class="fas fa-bars"></i>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
-      <nav class="nav-mobile" id="nav-mobile">
-        <a href="#sobre" class="nav-link">Sobre Mim</a>
-        <a href="#carreira" class="nav-link">Carreira</a>
-        <a href="#projetos" class="nav-link">Projetos</a>
-        <a href="#contato" class="nav-link">Contato</a>
-      </nav>
     </header>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#sobre" class="mobile-menu-link">Sobre Mim</a>
+      <a href="#carreira" class="mobile-menu-link">Carreira</a>
+      <a href="#projetos" class="mobile-menu-link">Projetos</a>
+      <a href="#contato" class="mobile-menu-link">Contato</a>
+    </div>
   `;
 
-  // Adicionar funcionalidade de scroll
   const header = document.getElementById('header');
-  const mobileToggle = document.getElementById('mobile-toggle');
-  const navMobile = document.getElementById('nav-mobile');
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-  // Header scroll effect
-  let lastScrollY = window.scrollY;
-  
-  function handleScroll() {
-    const scrollY = window.scrollY;
-    
-    if (scrollY > 50) {
+  // Scroll effect
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
-    
-    lastScrollY = scrollY;
-  }
-
-  window.addEventListener('scroll', handleScroll, { passive: true });
-
-  // Mobile menu toggle
-  mobileToggle?.addEventListener('click', () => {
-    navMobile.classList.toggle('open');
-    const icon = mobileToggle.querySelector('i');
-    icon.classList.toggle('fa-bars');
-    icon.classList.toggle('fa-times');
   });
 
-  // Close mobile menu when clicking on links
-  navMobile?.querySelectorAll('.nav-link').forEach(link => {
+  // Mobile menu toggle
+  menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+
+  // Close menu on link click
+  mobileMenu.querySelectorAll('.mobile-menu-link').forEach(link => {
     link.addEventListener('click', () => {
-      navMobile.classList.remove('open');
-      const icon = mobileToggle.querySelector('i');
-      icon.classList.add('fa-bars');
-      icon.classList.remove('fa-times');
+      menuBtn.classList.remove('active');
+      mobileMenu.classList.remove('active');
     });
   });
 }
