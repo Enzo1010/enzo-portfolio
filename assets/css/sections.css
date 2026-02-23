@@ -133,34 +133,6 @@
   border-color: #4ade80;
 }
 
-.tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.tech-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 1.4rem 0.8rem;
-  background: #fff;
-  border: 1px solid var(--gray-200);
-  border-radius: var(--radius);
-  transition: all var(--transition);
-  box-shadow: var(--shadow-sm);
-}
-.tech-card:hover {
-  border-color: var(--green-500);
-  box-shadow: 0 4px 16px rgba(22,163,74,0.1);
-  transform: translateY(-2px);
-}
-.tech-icon { font-size: 2.2rem; }
-.tech-card span { font-size: 0.82rem; font-weight: 500; color: var(--gray-600); }
-
 /* ---------- Career Grid ---------- */
 .career-grid {
   display: grid;
@@ -714,3 +686,49 @@
   background: var(--green-700);
   box-shadow: 0 4px 14px rgba(22,163,74,0.2);
 }
+
+/* ---------- Tags 'Sobre Mim' ---------- */
+.about-tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.tag-backend,
+.tag-learning {
+  background: var(--green-50);
+  color: var(--green-700);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ---------- Ícones de Tecnologia ---------- */
+.tech-icon-frontend { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.tech-icon-backend { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.tech-icon-database { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.tech-icon-others { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+
+/* ---------- Ícones de Contato ---------- */
+.contact-icon-email { background: #ea4335; }
+.contact-icon-whatsapp { background: #25d366; }
+.contact-icon-linkedin { background: #0a66c2; }
+.contact-icon-github { background: #333; }
+.contact-icon-location { background: #e74c3c; }
+
+/* ---------- Ícones de Projetos ---------- */
+.project-logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.project-techs .tech-icon-vue { color: #4fc08d; }
+.project-techs .tech-icon-ts { color: #3178c6; }
+.project-techs .tech-icon-python { color: #3776ab; }
+.project-techs .tech-icon-git { color: #f05032; }
+.project-techs .tech-icon-html { color: #e34f26; }
+.project-techs .tech-icon-css { color: #264de4; }
+.project-techs .tech-icon-js { color: #f7df1e; }

@@ -16,9 +16,9 @@ export function renderHeader(container) {
           <a href="#contato" class="nav-link"><i class="fas fa-envelope"></i> Contato</a>
         </nav>
         <div class="header-socials">
-          <a href="https://github.com/Enzo1010" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/enzobazzi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:enzobazzideoliveira@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/Enzo1010" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/enzobazzi" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:enzobazzideoliveira@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
         </div>
         <button class="mobile-menu-btn" id="mobile-menu-btn" type="button">
           <span></span>

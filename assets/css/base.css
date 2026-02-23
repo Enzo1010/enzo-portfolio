@@ -37,10 +37,31 @@ img { max-width: 100%; display: block; }
 .section-alt { background: var(--gray-50); }
 
 .section-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
   text-align: center;
   color: var(--gray-800);
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--green-500);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--gray-500);
+  margin-bottom: 3rem;
+  font-size: 1rem;
 }
 .section-title-left { text-align: left; }
