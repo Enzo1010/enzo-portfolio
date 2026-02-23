@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enzo Bazzi de Oliveira - Desenvolvedor Backend Jr</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (rendered by JS component) -->
+    <div id="header-root"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-name">Enzo Bazzi de Oliveira</h1>
+          <p class="hero-role">Desenvolvedor Back-End em formação</p>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-circle">
+            <img src="assets/img/me.jpeg" alt="Enzo Bazzi de Oliveira">
+          </div>
+        </div>
+      </div>
+      <div class="hero-divider">
+        <span class="divider-dot"></span>
+        <span class="divider-line"></span>
+        <span class="divider-dot"></span>
+      </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre mim</h2>
+        <div class="about-card">
+          <p>
+            Estudante de <strong>Ciência da Computação</strong> na
+            <strong>URI Erechim</strong> e técnico em Informática pelo
+            <strong>IFRS</strong>. Atualmente atuo como
+            <strong>Assistente de TI</strong> com foco em infraestrutura,
+            enquanto desenvolvo base sólida em desenvolvimento backend,
+            especialmente com <strong>Java</strong>
+            e bancos de dados relacionais. Também possuo experiência com
+            projetos freelancer, desenvolvendo soluções sob demanda.
+          </p>
+          <p>
+            <strong>Idiomas:</strong> Português (Nativo) · Inglês
+            (Intermediário)
+          </p>
+          <div
+            class="about-tags"
+            style="display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap"
+          >
+            <span
+              style="
+                background: var(--green-50);
+                color: var(--green-700);
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.85rem;
+                font-weight: 500;
+              "
+              >Backend</span
+            >
+            <span
+              style="
+                background: var(--green-50);
+                color: var(--green-700);
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.85rem;
+                font-weight: 500;
+              "
+              >Iniciante no mercado</span
+            >
+            <span
+              style="
+                background: var(--green-50);
+                color: var(--green-700);
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.85rem;
+                font-weight: 500;
+              "
+              >Aprendizado contínuo</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Tecnologias e Ferramentas</h2>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
+          <!-- Coluna Esquerda -->
+          <div>
+            <h3 class="tech-category-title"><i class="fas fa-palette"></i> Front-end</h3>
+            <div class="tech-list">
+              <span class="tech-pill"><i class="fab fa-html5" style="color:#e34f26"></i> HTML5</span>
+              <span class="tech-pill"><i class="fab fa-css3-alt" style="color:#264de4"></i> CSS3</span>
+              <span class="tech-pill"><i class="fab fa-js-square" style="color:#f7df1e"></i> JavaScript</span>
+            </div>
+
+            <h3 class="tech-category-title" style="margin-top:24px;"><i class="fas fa-server"></i> Back-end</h3>
+            <div class="tech-list">
+              <span class="tech-pill"><i class="fab fa-java" style="color:#e76f00"></i> Java</span>
+            </div>
+          </div>
+
+          <!-- Coluna Direita -->
+          <div>
+            <h3 class="tech-category-title"><i class="fas fa-database"></i> Banco de Dados</h3>
+            <div class="tech-list">
+              <span class="tech-pill"><i class="fas fa-database" style="color:#336791"></i> SQL</span>
+              <span class="tech-pill"><i class="fas fa-database" style="color:#336791"></i> PostgreSQL</span>
+              <span class="tech-pill"><i class="fas fa-database" style="color:#00758f"></i> MySQL</span>
+            </div>
+
+            <h3 class="tech-category-title" style="margin-top:24px;"><i class="fas fa-cogs"></i> Outros</h3>
+            <div class="tech-list">
+              <span class="tech-pill"><i class="fab fa-git-alt" style="color:#f05032"></i> Git</span>
+              <span class="tech-pill"><i class="fab fa-linux" style="color:#fcc624"></i> Linux</span>
+              <span class="tech-pill"><i class="fab fa-windows" style="color:#0078d4"></i> Windows</span>
+              <span class="tech-pill"><i class="fab fa-figma" style="color:#f24e1e"></i> Figma</span>
+              <span class="tech-pill"><i class="fas fa-project-diagram" style="color:#f08705"></i> Draw.io</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação e Experiência -->
+    <section id="carreira" class="section">
+      <div class="container">
+        <div class="career-grid">
+          <!-- Formação -->
+          <div class="career-col">
+            <h2 class="section-title section-title-left">Formação</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date"
+                    >Mar, 2025 - Dez, 2028 (em andamento)</span
+                  >
+                  <h3 class="timeline-heading">
+                    Bacharelado em Ciência da Computação
+                  </h3>
+                  <p class="timeline-desc">
+                    URI - Universidade Regional Integrada do Alto Uruguai e das
+                    Missões — Erechim, RS. Fundamentos de programação,
+                    algoritmos e sistemas.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Mar, 2022 - Dez, 2024</span>
+                  <h3 class="timeline-heading">
+                    Técnico em Informática Integrado ao Ensino Médio
+                  </h3>
+                  <p class="timeline-desc">
+                    IFRS — Instituto Federal de Educação, Ciência e Tecnologia
+                    do Rio Grande do Sul, Campus Erechim. Programação, banco de
+                    dados e infraestrutura.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experiência -->
+          <div class="career-col">
+            <h2 class="section-title section-title-left">Experiência</h2>
+            <div class="exp-card">
+              <div class="exp-header">
+                <h3 class="exp-title">Assistente de TI — Metaro</h3>
+                <p class="exp-meta">Ago 2025 - Atual | Erechim - RS</p>
+              </div>
+              <div class="exp-body">
+                <p>
+                  - Suporte e manutenção de infraestrutura de TI e estações de
+                  trabalho.
+                </p>
+                <p>
+                  - Atendimento a chamados, diagnóstico e resolução de problemas
+                  técnicos.
+                </p>
+                <p>
+                  - Apoio na organização de processos internos e documentação de
+                  TI.
+                </p>
+                <p>
+                  - Desenvolvimento de soluções como freelancer, atendendo
+                  demandas pontuais.
+                </p>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-header">
+                <h3 class="exp-title">
+                  Programador de Sistemas — Emp. de Transportes Gaurama LTDA
+                </h3>
+                <p class="exp-meta">Fev 2025 - Jul 2025 | Erechim - RS</p>
+              </div>
+              <div class="exp-body">
+                <p>- Desenvolvimento e manutenção de sistemas internos.</p>
+                <p>
+                  - Implementação de funcionalidades com JavaScript, PHP e SQL.
+                </p>
+                <p>
+                  - Correção de bugs e melhorias conforme demanda dos usuários.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projetos</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon"><img src="assets/img/app-logo-sfundo.png" alt="NegoMaq" style="width:32px;height:32px;object-fit:contain;"></div>
+              <h3 class="project-name">E-commerce NegoMaq</h3>
+            </div>
+            <p class="project-desc">
+              Aplicação web para gestão e vendas de facas, desenvolvida com foco
+              em desempenho, escalabilidade e boa experiência do usuário. O
+              projeto utiliza tecnologias modernas do ecossistema Vue, com
+              arquitetura baseada em componentes e boas práticas de
+              desenvolvimento frontend.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ezequielmuller/app-negomaq"
+                target="_blank"
+                class="project-link"
+                ><i class="fab fa-github"></i> Frontend</a
+              >
+              <a
+                href="https://github.com/Lucas-Blanger/nego-maq-api"
+                target="_blank"
+                class="project-link"
+                ><i class="fab fa-github"></i> Backend</a
+              >
+            </div>
+            <div class="project-techs">
+              <i class="fab fa-vuejs" style="color: #4fc08d" title="Vue.js"></i>
+              <i class="fab fa-js-square" style="color: #3178c6" title="TypeScript"></i>
+              <i class="fab fa-python" style="color: #3776ab" title="Python"></i>
+              <i class="fab fa-git-alt" style="color: #f05032" title="Git"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-layout">
+          <!-- Redes Sociais -->
+          <div class="contact-socials">
+            <h3 class="contact-heading">Minhas redes</h3>
+            <div class="contact-links">
+              <a href="mailto:enzobazzideoliveira@gmail.com" class="contact-link-item">
+                <div class="contact-icon" style="background:#ea4335;"><i class="fas fa-envelope"></i></div>
+                <div class="contact-link-info">
+                  <span class="contact-link-label">E-mail</span>
+                  <span class="contact-link-value">enzobazzideoliveira@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+5554992205166" class="contact-link-item">
+                <div class="contact-icon" style="background:#25d366;"><i class="fab fa-whatsapp"></i></div>
+                <div class="contact-link-info">
+                  <span class="contact-link-label">WhatsApp</span>
+                  <span class="contact-link-value">+55 (54) 99220-5166</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/enzobazzi" target="_blank" class="contact-link-item">
+                <div class="contact-icon" style="background:#0a66c2;"><i class="fab fa-linkedin-in"></i></div>
+                <div class="contact-link-info">
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-value">enzo-bazzi</span>
+                </div>
+              </a>
+              <a href="https://github.com/Enzo1010" target="_blank" class="contact-link-item">
+                <div class="contact-icon" style="background:#333;"><i class="fab fa-github"></i></div>
+                <div class="contact-link-info">
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-value">Enzo1010</span>
+                </div>
+              </a>
+              <div class="contact-link-item" style="cursor:default;">
+                <div class="contact-icon" style="background:#e74c3c;"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="contact-link-info">
+                  <span class="contact-link-label">Localização</span>
+                  <span class="contact-link-value">Erechim - RS, Brasil</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário -->
+          <div class="contact-form-wrapper">
+            <h3 class="contact-heading">Envie uma mensagem</h3>
+            <form class="contact-form" action="https://formsubmit.co/enzobazzideoliveira@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Contato via Portfólio">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="#">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+              </div>
+              <button type="submit" class="form-btn"><i class="fas fa-paper-plane"></i> Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (rendered by JS component) -->
+    <div id="footer-root"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
