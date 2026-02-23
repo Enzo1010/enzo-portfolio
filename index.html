@@ -102,38 +102,100 @@
       <div class="container">
         <h2 class="section-title">Tecnologias e Ferramentas</h2>
 
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
-          <!-- Coluna Esquerda -->
-          <div>
-            <h3 class="tech-category-title"><i class="fas fa-palette"></i> Front-end</h3>
-            <div class="tech-list">
-              <span class="tech-pill"><i class="fab fa-html5" style="color:#e34f26"></i> HTML5</span>
-              <span class="tech-pill"><i class="fab fa-css3-alt" style="color:#264de4"></i> CSS3</span>
-              <span class="tech-pill"><i class="fab fa-js-square" style="color:#f7df1e"></i> JavaScript</span>
+        <div class="tech-categories-grid">
+          <!-- Front-end Card -->
+          <div class="tech-category-card" data-category="frontend">
+            <div class="tech-card-header">
+              <div class="tech-card-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3>Front-end</h3>
             </div>
-
-            <h3 class="tech-category-title" style="margin-top:24px;"><i class="fas fa-server"></i> Back-end</h3>
-            <div class="tech-list">
-              <span class="tech-pill"><i class="fab fa-java" style="color:#e76f00"></i> Java</span>
+            <div class="tech-items">
+              <div class="tech-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
             </div>
           </div>
 
-          <!-- Coluna Direita -->
-          <div>
-            <h3 class="tech-category-title"><i class="fas fa-database"></i> Banco de Dados</h3>
-            <div class="tech-list">
-              <span class="tech-pill"><i class="fas fa-database" style="color:#336791"></i> SQL</span>
-              <span class="tech-pill"><i class="fas fa-database" style="color:#336791"></i> PostgreSQL</span>
-              <span class="tech-pill"><i class="fas fa-database" style="color:#00758f"></i> MySQL</span>
+          <!-- Back-end Card -->
+          <div class="tech-category-card" data-category="backend">
+            <div class="tech-card-header">
+              <div class="tech-card-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3>Back-end</h3>
             </div>
+            <div class="tech-items">
+              <div class="tech-item">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+              </div>
+            </div>
+          </div>
 
-            <h3 class="tech-category-title" style="margin-top:24px;"><i class="fas fa-cogs"></i> Outros</h3>
-            <div class="tech-list">
-              <span class="tech-pill"><i class="fab fa-git-alt" style="color:#f05032"></i> Git</span>
-              <span class="tech-pill"><i class="fab fa-linux" style="color:#fcc624"></i> Linux</span>
-              <span class="tech-pill"><i class="fab fa-windows" style="color:#0078d4"></i> Windows</span>
-              <span class="tech-pill"><i class="fab fa-figma" style="color:#f24e1e"></i> Figma</span>
-              <span class="tech-pill"><i class="fas fa-project-diagram" style="color:#f08705"></i> Draw.io</span>
+          <!-- Banco de Dados Card -->
+          <div class="tech-category-card" data-category="database">
+            <div class="tech-card-header">
+              <div class="tech-card-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Banco de Dados</h3>
+            </div>
+            <div class="tech-items">
+              <div class="tech-item">
+                <i class="fas fa-code"></i>
+                <span>SQL</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outros Card -->
+          <div class="tech-category-card" data-category="others">
+            <div class="tech-card-header">
+              <div class="tech-card-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3>Outros</h3>
+            </div>
+            <div class="tech-items">
+              <div class="tech-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-linux"></i>
+                <span>Linux</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-windows"></i>
+                <span>Windows</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-figma"></i>
+                <span>Figma</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-project-diagram"></i>
+                <span>Draw.io</span>
+              </div>
             </div>
           </div>
         </div>
@@ -146,35 +208,35 @@
         <div class="career-grid">
           <!-- Formação -->
           <div class="career-col">
-            <h2 class="section-title section-title-left">Formação</h2>
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <span class="timeline-date"
-                    >Mar, 2025 - Dez, 2028 (em andamento)</span
-                  >
-                  <h3 class="timeline-heading">
-                    Bacharelado em Ciência da Computação
-                  </h3>
-                  <p class="timeline-desc">
-                    URI - Universidade Regional Integrada do Alto Uruguai e das
-                    Missões — Erechim, RS. Fundamentos de programação,
-                    algoritmos e sistemas.
+            <div class="career-section-header">
+              <div class="career-icon-wrapper">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h2 class="career-section-title">Formação</h2>
+            </div>
+            <div class="timeline-modern">
+              <div class="timeline-item-modern">
+                <div class="timeline-marker active"></div>
+                <div class="timeline-content-modern">
+                  <div class="timeline-badge">Em andamento</div>
+                  <span class="timeline-date-modern">Mar 2025 - Dez 2028</span>
+                  <h3 class="timeline-title">Bacharelado em Ciência da Computação</h3>
+                  <p class="timeline-org">URI Erechim</p>
+                  <p class="timeline-desc-modern">
+                    Fundamentos de programação, algoritmos, estruturas de dados
+                    e desenvolvimento de sistemas.
                   </p>
                 </div>
               </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <span class="timeline-date">Mar, 2022 - Dez, 2024</span>
-                  <h3 class="timeline-heading">
-                    Técnico em Informática Integrado ao Ensino Médio
-                  </h3>
-                  <p class="timeline-desc">
-                    IFRS — Instituto Federal de Educação, Ciência e Tecnologia
-                    do Rio Grande do Sul, Campus Erechim. Programação, banco de
-                    dados e infraestrutura.
+              <div class="timeline-item-modern">
+                <div class="timeline-marker completed"></div>
+                <div class="timeline-content-modern">
+                  <div class="timeline-badge completed">Concluído</div>
+                  <span class="timeline-date-modern">Mar 2022 - Dez 2024</span>
+                  <h3 class="timeline-title">Técnico em Informática</h3>
+                  <p class="timeline-org">IFRS Campus Erechim</p>
+                  <p class="timeline-desc-modern">
+                    Programação, banco de dados, redes e infraestrutura de TI.
                   </p>
                 </div>
               </div>
@@ -183,47 +245,54 @@
 
           <!-- Experiência -->
           <div class="career-col">
-            <h2 class="section-title section-title-left">Experiência</h2>
-            <div class="exp-card">
-              <div class="exp-header">
-                <h3 class="exp-title">Assistente de TI — Metaro</h3>
-                <p class="exp-meta">Ago 2025 - Atual | Erechim - RS</p>
+            <div class="career-section-header">
+              <div class="career-icon-wrapper">
+                <i class="fas fa-briefcase"></i>
               </div>
-              <div class="exp-body">
-                <p>
-                  - Suporte e manutenção de infraestrutura de TI e estações de
-                  trabalho.
-                </p>
-                <p>
-                  - Atendimento a chamados, diagnóstico e resolução de problemas
-                  técnicos.
-                </p>
-                <p>
-                  - Apoio na organização de processos internos e documentação de
-                  TI.
-                </p>
-                <p>
-                  - Desenvolvimento de soluções como freelancer, atendendo
-                  demandas pontuais.
-                </p>
-              </div>
+              <h2 class="career-section-title">Experiência</h2>
             </div>
-
-            <div class="exp-card">
-              <div class="exp-header">
-                <h3 class="exp-title">
-                  Programador de Sistemas — Emp. de Transportes Gaurama LTDA
-                </h3>
-                <p class="exp-meta">Fev 2025 - Jul 2025 | Erechim - RS</p>
+            <div class="experience-list">
+              <div class="exp-card-modern">
+                <div class="exp-header-modern">
+                  <div class="exp-company-info">
+                    <h3 class="exp-role">Assistente de TI</h3>
+                    <p class="exp-company">Metaro</p>
+                  </div>
+                  <div class="exp-meta-modern">
+                    <span class="exp-period">Ago 2025 - Atual</span>
+                    <span class="exp-location">Erechim - RS</span>
+                  </div>
+                </div>
+                <ul class="exp-responsibilities">
+                  <li>Suporte e manutenção de infraestrutura de TI e estações de trabalho</li>
+                  <li>Atendimento a chamados e resolução de problemas técnicos</li>
+                  <li>Organização de processos internos e documentação</li>
+                  <li>Desenvolvimento de soluções freelancer sob demanda</li>
+                </ul>
               </div>
-              <div class="exp-body">
-                <p>- Desenvolvimento e manutenção de sistemas internos.</p>
-                <p>
-                  - Implementação de funcionalidades com JavaScript, PHP e SQL.
-                </p>
-                <p>
-                  - Correção de bugs e melhorias conforme demanda dos usuários.
-                </p>
+
+              <div class="exp-card-modern">
+                <div class="exp-header-modern">
+                  <div class="exp-company-info">
+                    <h3 class="exp-role">Programador de Sistemas</h3>
+                    <p class="exp-company">Transportes Gaurama LTDA</p>
+                  </div>
+                  <div class="exp-meta-modern">
+                    <span class="exp-period">Fev - Jul 2025</span>
+                    <span class="exp-location">Erechim - RS</span>
+                  </div>
+                </div>
+                <ul class="exp-responsibilities">
+                  <li>Desenvolvimento e manutenção de sistemas internos</li>
+                  <li>Implementação de funcionalidades com JavaScript, PHP e SQL</li>
+                  <li>Correção de bugs e melhorias conforme demanda</li>
+                </ul>
+                <div class="exp-tech-stack">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">Git</span>
+                </div>
               </div>
             </div>
           </div>
@@ -269,6 +338,33 @@
               <i class="fab fa-git-alt" style="color: #f05032" title="Git"></i>
             </div>
           </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-industry"></i></div>
+              <h3 class="project-name">Movmaq</h3>
+            </div>
+            <p class="project-desc">
+              Projeto freelance para cliente no setor de soluções industriais
+              (portas, docas de carga, manutenção). Design e estrutura inspirados
+              no Northern Dock Systems. Atualmente em desenvolvimento, aguardando
+              envio de dados reais do cliente.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/Enzo1010/Movmaq"
+                target="_blank"
+                class="project-link"
+                ><i class="fab fa-github"></i> Ver no GitHub</a
+              >
+            </div>
+            <div class="project-techs">
+              <i class="fab fa-html5" style="color: #e34f26" title="HTML5"></i>
+              <i class="fab fa-css3-alt" style="color: #264de4" title="CSS3"></i>
+              <i class="fab fa-js-square" style="color: #f7df1e" title="JavaScript"></i>
+              <i class="fab fa-git-alt" style="color: #f05032" title="Git"></i>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -300,7 +396,7 @@
                 <div class="contact-icon" style="background:#0a66c2;"><i class="fab fa-linkedin-in"></i></div>
                 <div class="contact-link-info">
                   <span class="contact-link-label">LinkedIn</span>
-                  <span class="contact-link-value">enzo-bazzi</span>
+                  <span class="contact-link-value">Enzo Bazzi de Oliveira</span>
                 </div>
               </a>
               <a href="https://github.com/Enzo1010" target="_blank" class="contact-link-item">

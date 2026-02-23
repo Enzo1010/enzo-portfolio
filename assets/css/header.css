@@ -3,28 +3,55 @@
    ============================================= */
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
-  background: rgba(255,255,255,0.92);
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--gray-200);
-  transition: box-shadow var(--transition);
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
-.header.scrolled { box-shadow: var(--shadow-md); }
+
+.header.scrolled { 
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border-bottom-color: var(--gray-300);
+}
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 80px;
+  padding: 0.5rem 0;
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.header.scrolled .header-inner {
+  height: 60px;
+  padding: 0.25rem 0;
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: var(--green-600);
-  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 95px;
+  width: auto;
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.header.scrolled .logo-img {
+  height: 50px;
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.05);
 }
 
 /* Desktop nav */

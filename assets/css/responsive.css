@@ -23,6 +23,16 @@
     gap: 2rem;
   }
 
+  .exp-header-modern {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .exp-meta-modern {
+    text-align: left;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -31,9 +41,9 @@
     text-align: center;
   }
 
-  .section-alt .container > div[style*="grid-template-columns"] {
+  .tech-categories-grid {
     grid-template-columns: 1fr !important;
-    gap: 24px !important;
+    gap: 20px !important;
   }
 
   .contact-layout {

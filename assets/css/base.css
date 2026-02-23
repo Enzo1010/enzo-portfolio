@@ -19,6 +19,7 @@ body {
   background: #fff;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  padding-top: 80px;
 }
 
 a { color: inherit; text-decoration: none; }
