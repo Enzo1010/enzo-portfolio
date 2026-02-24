@@ -22,3 +22,66 @@
 .fade-in:nth-child(6) { transition-delay: 0.25s; }
 .fade-in:nth-child(7) { transition-delay: 0.30s; }
 .fade-in:nth-child(8) { transition-delay: 0.35s; }
+
+/* =============================================
+   Notification Toast
+   ============================================= */
+
+.notification-toast {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background: var(--bg-surface);
+  color: var(--gray-700);
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  z-index: 10000;
+  border-left: 4px solid var(--green-500);
+  min-width: 300px;
+  max-width: 400px;
+  opacity: 0;
+  transform: translateX(400px);
+  transition: all 0.3s ease;
+}
+
+.notification-toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.notification-toast.notification-success {
+  border-left-color: var(--green-500);
+}
+
+.notification-toast.notification-success i {
+  color: var(--green-600);
+  font-size: 1.2rem;
+}
+
+.notification-toast.notification-error {
+  border-left-color: #ef4444;
+}
+
+.notification-toast.notification-error i {
+  color: #ef4444;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+  .notification-toast {
+    left: 20px;
+    right: 20px;
+    min-width: auto;
+    transform: translateY(-100px);
+  }
+  
+  .notification-toast.show {
+    transform: translateY(0);
+  }
+}

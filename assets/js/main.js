@@ -79,3 +79,70 @@ document.querySelectorAll(animatedSelectors.join(', ')).forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
 });
+
+// ── Contact Form Handler ──
+const contactForm = document.querySelector('.contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const submitBtn = contactForm.querySelector('.form-btn');
+    const originalBtnText = submitBtn.innerHTML;
+    
+    // Desabilita botão e mostra loading
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+    try {
+      const formData = new FormData(contactForm);
+      
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        // Sucesso - mostra mensagem
+        showNotification('Mensagem enviada com sucesso! Obrigado pelo contato.', 'success');
+        contactForm.reset();
+      } else {
+        throw new Error('Erro ao enviar');
+      }
+    } catch (error) {
+      showNotification('Erro ao enviar mensagem. Tente novamente mais tarde.', 'error');
+    } finally {
+      // Restaura botão
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+    }
+  });
+}
+
+// Função para mostrar notificação
+function showNotification(message, type = 'success') {
+  // Remove notificação existente se houver
+  const existing = document.querySelector('.notification-toast');
+  if (existing) existing.remove();
+
+  const notification = document.createElement('div');
+  notification.className = `notification-toast notification-${type}`;
+  notification.innerHTML = `
+    <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+    <span>${message}</span>
+  `;
+
+  document.body.appendChild(notification);
+
+  // Anima entrada
+  setTimeout(() => notification.classList.add('show'), 100);
+
+  // Remove após 5 segundos
+  setTimeout(() => {
+    notification.classList.remove('show');
+    setTimeout(() => notification.remove(), 300);
+  }, 5000);
+}
