@@ -6,13 +6,13 @@
 .about-card {
   max-width: 720px;
   margin: 0 auto;
-  background: #fff;
+  background: var(--bg-surface);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   padding: 2rem 2.5rem;
   box-shadow: var(--shadow-sm);
 }
-.section-alt .about-card { background: #fff; }
+.section-alt .about-card { background: var(--bg-surface); }
 .about-card p {
   font-size: 0.95rem;
   color: var(--gray-600);
@@ -32,7 +32,7 @@
 }
 
 .tech-category-card {
-  background: #fff;
+  background: var(--bg-surface);
   border: 1px solid var(--gray-200);
   border-radius: 12px;
   padding: 20px;
@@ -216,7 +216,7 @@
 }
 
 .timeline-content-modern {
-  background: #fff;
+  background: var(--bg-surface);
   border: 1px solid var(--gray-200);
   border-radius: 12px;
   padding: 20px;
@@ -283,7 +283,7 @@
 }
 
 .exp-card-modern {
-  background: #fff;
+  background: var(--bg-surface);
   border: 1px solid var(--gray-200);
   border-radius: 12px;
   padding: 24px;
@@ -429,7 +429,7 @@
 
 /* Experience card */
 .exp-card {
-  background: #fff;
+  background: var(--bg-surface);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   padding: 1.5rem;
@@ -477,7 +477,7 @@
 }
 
 .project-card {
-  background: #fff;
+  background: var(--bg-surface);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   padding: 1.5rem;
@@ -577,7 +577,7 @@
   align-items: center;
   gap: 12px;
   padding: 10px 14px;
-  background: #fff;
+  background: var(--bg-surface);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   transition: all var(--transition);
@@ -623,7 +623,7 @@
 
 /* Contact Form */
 .contact-form-wrapper {
-  background: #fff;
+  background: var(--bg-surface);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   padding: 24px;
@@ -662,7 +662,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--green-500);
-  background: #fff;
+  background: var(--input-focus-bg);
 }
 
 .form-btn {

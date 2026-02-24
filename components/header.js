@@ -15,10 +15,15 @@ export function renderHeader(container) {
           <a href="#projetos" class="nav-link"><i class="fas fa-code"></i> Projetos</a>
           <a href="#contato" class="nav-link"><i class="fas fa-envelope"></i> Contato</a>
         </nav>
-        <div class="header-socials">
-          <a href="https://github.com/Enzo1010" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/enzobazzi" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:enzobazzideoliveira@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+        <div class="header-actions">
+          <div class="header-socials">
+            <a href="https://github.com/Enzo1010" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/enzobazzi" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:enzobazzideoliveira@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Alternar tema" title="Alternar tema">
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
         <button class="mobile-menu-btn" id="mobile-menu-btn" type="button">
           <span></span>

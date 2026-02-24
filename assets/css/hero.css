@@ -4,7 +4,7 @@
 
 .hero {
   padding: 4rem 0 2.5rem;
-  background: #fff;
+  background: var(--bg-surface);
 }
 
 .hero-inner {
