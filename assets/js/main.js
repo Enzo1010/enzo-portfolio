@@ -12,15 +12,22 @@ renderFooter(document.getElementById('footer-root'));
 
 // ── Theme toggle (light/dark) ──
 const themeToggleBtn = document.getElementById('theme-toggle-btn');
+const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+const mobileThemeIcon = document.getElementById('mobile-theme-icon');
 const themeStorageKey = 'enzo-portfolio-theme';
 
 const updateThemeIcon = (theme) => {
-  if (!themeToggleBtn) return;
-  const icon = themeToggleBtn.querySelector('i');
-  if (!icon) return;
-
-  icon.classList.remove('fa-moon', 'fa-sun');
-  icon.classList.add(theme === 'dark' ? 'fa-sun' : 'fa-moon');
+  if (themeToggleBtn) {
+    const icon = themeToggleBtn.querySelector('i');
+    if (icon) {
+      icon.classList.remove('fa-moon', 'fa-sun');
+      icon.classList.add(theme === 'dark' ? 'fa-sun' : 'fa-moon');
+    }
+  }
+  if (mobileThemeIcon) {
+    mobileThemeIcon.classList.remove('fa-moon', 'fa-sun');
+    mobileThemeIcon.classList.add(theme === 'dark' ? 'fa-sun' : 'fa-moon');
+  }
 };
 
 const updateLogo = (theme) => {
@@ -35,6 +42,7 @@ const applyTheme = (theme) => {
   document.documentElement.setAttribute('data-theme', theme);
   updateThemeIcon(theme);
   updateLogo(theme);
+  if (mobileThemeToggle) mobileThemeToggle.checked = (theme === 'dark');
 };
 
 const getInitialTheme = () => {
@@ -54,7 +62,14 @@ if (themeToggleBtn) {
   themeToggleBtn.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
     const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme);
+    localStorage.setItem(themeStorageKey, nextTheme);
+  });
+}
 
+if (mobileThemeToggle) {
+  mobileThemeToggle.addEventListener('change', () => {
+    const nextTheme = mobileThemeToggle.checked ? 'dark' : 'light';
     applyTheme(nextTheme);
     localStorage.setItem(themeStorageKey, nextTheme);
   });

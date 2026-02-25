@@ -44,6 +44,18 @@ export function renderHeader(container) {
       <a href="#carreira" class="mobile-menu-link">Carreira</a>
       <a href="#projetos" class="mobile-menu-link">Projetos</a>
       <a href="#contato" class="mobile-menu-link">Contato</a>
+      <div class="mobile-theme-row">
+        <span class="mobile-theme-label">
+          <i class="fas fa-moon" id="mobile-theme-icon"></i>
+          Modo Escuro
+        </span>
+        <label class="apple-toggle" aria-label="Alternar tema">
+          <input type="checkbox" id="mobile-theme-toggle">
+          <span class="apple-toggle-track">
+            <span class="apple-toggle-thumb"></span>
+          </span>
+        </label>
+      </div>
     </div>
   `;
 
