@@ -39,7 +39,7 @@
 }
 
 .logo-img {
-  height: 95px;
+  height: 55px;
   width: auto;
   transition: all 0.3s ease;
 }
@@ -203,5 +203,9 @@
   
   .mobile-menu-btn {
     display: flex !important;
+  }
+
+  .header.scrolled + .mobile-menu {
+    top: 60px;
   }
 }

@@ -37,7 +37,7 @@ img { max-width: 100%; display: block; }
 .section-alt { background: var(--bg-surface-alt); }
 
 .section-title {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 6vw, 2rem);
   font-weight: 700;
   text-align: center;
   color: var(--gray-800);

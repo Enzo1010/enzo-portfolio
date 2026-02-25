@@ -7,7 +7,14 @@ export function renderHeader(container) {
     <header class="header" id="header">
       <div class="container header-inner">
         <a href="#" class="logo">
-          <img src="assets/img/logoMe.png" alt="Enzo Bazzi Logo" class="logo-img">
+          <img
+            src="assets/img/logo-light.svg"
+            data-logo-light="assets/img/logo-light.svg"
+            data-logo-dark="assets/img/logo-dark.svg"
+            alt="Enzo Bazzi Logo"
+            class="logo-img"
+            id="logo-img"
+          >
         </a>
         <nav class="nav-desktop">
           <a href="#sobre" class="nav-link"><i class="fas fa-user"></i> Sobre Mim</a>

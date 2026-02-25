@@ -23,9 +23,18 @@ const updateThemeIcon = (theme) => {
   icon.classList.add(theme === 'dark' ? 'fa-sun' : 'fa-moon');
 };
 
+const updateLogo = (theme) => {
+  const logoImg = document.getElementById('logo-img');
+  if (!logoImg) return;
+  logoImg.src = theme === 'dark'
+    ? logoImg.dataset.logoDark
+    : logoImg.dataset.logoLight;
+};
+
 const applyTheme = (theme) => {
   document.documentElement.setAttribute('data-theme', theme);
   updateThemeIcon(theme);
+  updateLogo(theme);
 };
 
 const getInitialTheme = () => {
