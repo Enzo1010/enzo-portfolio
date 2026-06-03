@@ -24,5 +24,4 @@ dist/
 build/
 
 # Package manager
-package-lock.json
 yarn.lock
